@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Расчет зарплаты</h1>
+        <div class="container-wrap">
+            <div class="container-input first">
+                <div class="item">
+                    <label for="zp_hour">Часовая оплата</label>
+                    <input class="zp_hour" id="zp_hour" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="zp_month">Ставка</label>
+                    <input class="zp_month" id="zp_month" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="day">Утро</label>
+                    <input class="day" id="day" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="night">Ночь</label>
+                    <input class="night" id="night" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="day-hofesh">Пятница утро</label>
+                    <input class="day-hofesh" id="day-hofesh" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="night-hofesh">Пятница ночь</label>
+                    <input class="night-hofesh" id="night-hofesh" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="saturday">Суббота утро</label>
+                    <input class="saturday" id="saturday" type="number" min="0">
+                </div>
+            </div>
+            <div class="container-input two">
+                <div class="item">
+                    <label for="dayDop">Утро Тигбур</label>
+                    <input class="dayDop" id="dayDop" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="nightDop">Ночь Тигбур</label>
+                    <input class="nightDop" id="nightDop" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="day-hofeshDop">Пятница утро Тигбур</label>
+                    <input class="day-hofeshDop" id="day-hofeshDop" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="night-hofeshDop">Пятница ночь Тигбур</label>
+                    <input class="night-hofeshDop" id="night-hofeshDop" type="number" min="0">
+                </div>
+                <div class="item">
+                    <label for="saturdayDop">Суббота утро Тигбур</label>
+                    <input class="saturdayDop" id="saturdayDop" type="number" min="0">
+                </div>
+        </div>
+        </div>
+
+
+        <div class="container-output">
+            <button class="btn" id="btn">Расчитать</button>
+
+            <div class="container-output-text">
+                <p class="text">Всего до уплаты налогов: <span id="brutto">0</span></p>
+                <p class="text">Всего после уплаты налогов: <span id="netto">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
