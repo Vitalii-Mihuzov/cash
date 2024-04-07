@@ -43,6 +43,8 @@ function tigburimSum(value) {
 
 btn.addEventListener('click', () => {
     document.getElementById('brutto').innerHTML = Math.round(regularSum() + tigburimSum());
+    const vsego = Math.round(regularSum() + tigburimSum());
+    document.getElementById('netto').innerHTML = Math.round(vsego * 0.9);
 })
 
 
